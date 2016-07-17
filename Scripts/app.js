@@ -21,7 +21,17 @@ app.config(["$routeProvider",
 
 app.controller("HomeCtrl", [ "$scope", 
 	function($scope) {
-		$scope.name = "Hello World!";
+		$scope.designers = [
+            { 
+                name: 'Elisa Seeds',
+                email: 'elisaseeds@icloud.com',
+                position: 'Owner / Designer / Front-End Developer'
+            },{ 
+                name: 'Bethany Cech',
+                email: 'bethanycech@gmail.com',
+                position: 'Designer'
+            }
+        ];
 	}
 ]);
 
