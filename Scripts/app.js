@@ -1,5 +1,6 @@
 var app = angular.module("app", [
-	"ngRoute"
+	"ngRoute",
+    "ngMaterial"
 ]);
 
 app.config(["$routeProvider",
@@ -21,6 +22,7 @@ app.config(["$routeProvider",
 
 app.controller("HomeCtrl", [ "$scope", 
 	function($scope) {
+
 		$scope.designers = [
             { 
                 name: 'Elisa Seeds',
@@ -32,6 +34,10 @@ app.controller("HomeCtrl", [ "$scope",
                 position: 'Designer'
             }
         ];
+
+          $scope.socialMedia.isOpen = false;
+          $scope.socialMedia.selectedMode = 'md-fling';
+          $scope.socialMedia.selectedDirection = 'left';
 	}
 ]);
 

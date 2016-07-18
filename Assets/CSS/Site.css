@@ -8,9 +8,20 @@ h1 {
 	font-weight: 300;
 }
 
+h2 {
+	font-family: 'Romanesco', cursive;
+}
+
 footer {
 	background: #677b81;
 	color: white;
 	padding: 45px 0;
 	margin-top: 25px;
+}
+
+.md-button .fa-share-square-o {
+	font-size: 24px;
+    margin-top: 2px;
+    display: block;
+    margin-left: 5px;
 }

@@ -2,12 +2,12 @@
 <html ng-app="app">
 <head>
 	<title>Turncoat Design, LLC</title>
- 	
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
  	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
     <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link href='//fonts.googleapis.com/css?family=Yantramanav:400,100,300,500,700' rel='stylesheet' type='text/css' />
+    <link href='//fonts.googleapis.com/css?family=Yantramanav:400,100,300,500,700|Romanesco' rel='stylesheet' type='text/css' />
     <link href="Assets/CSS/font-awesome.css" type="text/css" rel="stylesheet" />
-   
+     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
     <link href="Assets/CSS/Site.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
@@ -30,6 +30,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/home">Home</a></li>
                     <li><a href="#/portfolio">Portfolio</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -41,16 +42,35 @@
     </div>
 	<footer>
         <div class="container">
-            footer text
-            <i class="fa fa-facebook-official"></i>
-            <i class="fa fa-linkedin-square"></i>
+           <md-fab-speed-dial md-open="socialMedia.isOpen" md-direction="{{socialMedia.selectedDirection}}" ng-class="socialMedia.selectedMode" class="pull-right">
+                <md-fab-trigger>
+                    <md-button aria-label="menu" class="md-fab">
+                        <i class="fa fa-share-square-o"></i>
+                    </md-button>
+                    </md-fab-trigger>
+                    <md-fab-actions>
+                      <md-button aria-label="Facebook" class="md-fab md-raised md-mini">
+                         <a href="//www.facebook.com/turncoatdesign/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                      </md-button>
+                      <md-button aria-label="Google Hangout" class="md-fab md-raised md-mini">
+                            <i class="fa fa-linkedin-square"></i>
+                      </md-button>
+                       <md-button aria-label="Google Hangout" class="md-fab md-raised md-mini">
+                            <a href="//www.instagram.com/turncoatdesign/"  target="_blank"><i class="fa fa-instagram"></i></a>
+                      </md-button>
+                    </md-fab-actions>
+              </md-fab-speed-dial>
         </div>
 	</footer>
 
-	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-resource.js"></script>
+	<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-resource.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
     <script src="Scripts/app.js"></script>
 </body>
 </html>

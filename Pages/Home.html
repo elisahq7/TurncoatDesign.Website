@@ -1,25 +1,25 @@
 
+<h1>What We Do</h1>
+<div class="row">
+  <div class="col-sm-6">
+    <h2>Design</h2>
+  </div>
+  <div class="col-sm-6">
+    <h2>Development</h2>
+    <p>
+      <i class="fa fa-html5"></i>
+      <i class="fa fa-css3"></i>
+      <i class="fa fa-github"></i>
+      <i class="fa fa-apple"></i>
+    </p>
 
+  </div>
+</div>
 
-
-
-<div style="clear: both"></div>
+<h1>Our Designers / Developers</h1>		    
+<div class="col-sm-6" ng-repeat="d in designers">
+	<h2>{{d.name}}</h3><br>
+	<i>{{d.position}}</i><br>
+	{{d.email}}
+</div>
 <h1>Customer Praises</h1>
-<md-toolbar md-scroll-shrink>
-    <div class="md-toolbar-tools">What We Do</div>
-</md-toolbar>
-<md-content style="height: 600px;">
-    <section>
-      <md-subheader class="md-primary"><h1>What We Do</h1></md-subheader>
-      
-    </section>
-    <section>
-      <md-subheader class="md-warn"><h1>Our Designers / Developers</h1></md-subheader>
-		      
-       		<div class="col-sm-6" ng-repeat="d in designers">
-				<h3>{{d.name}}</h3><br>
-				<i>{{d.position}}</i><br>
-				{{d.email}}
-			</div>
-	</section>
-</md-content>
